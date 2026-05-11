@@ -195,3 +195,63 @@ textarea {
     padding: 15px 20px;
 }
 
+/* formato de la galeria */
+
+.contenedor_galery{
+    max-width: 1200px;
+    margin: 16px auto;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.galery{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+
+}
+
+.galery img{
+    width: 100%;
+    height: 100%;
+}
+
+.uno{
+    grid-column: 1 / 7;
+}
+
+.dos{
+    grid-column: 7 / 13;
+}
+
+.tres{
+    grid-column: 1/5;
+}
+
+.cuatro{
+    grid-column: 5/9;
+}
+
+.cinco{
+    grid-column: 1/9;
+}
+
+.seis{
+    grid-column: 9/13;
+    grid-row: 2/4;
+}
+
+@media (max-width: 900px){
+
+    .cinco{
+        grid-column: 1/12;
+    }
+
+    .seis{
+        grid-row: 2/3;
+        grid-column: 9/13;
+    }
+
+}
