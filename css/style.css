@@ -246,13 +246,15 @@ textarea {
 
 @media (max-width:900px) {
 
-    .galery{
+    .contenedor_galery {
         width: 90%;
-        margin: 0px auto;
+    }
+
+    .galery {
+        margin: 10px auto;
     }
 
     .galery img {
-        width: 100%;
         height: 300px;
     }
 
@@ -267,7 +269,33 @@ textarea {
 
     }
 
+}
+
+
+@media (max-width: 768px) {
+
+    .galery {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 10px;
+    }
+
+    .galery img {
+        height: 200px;
+    }
+
+    .uno,
+    .dos,
+    .tres,
+    .cuatro,
+    .cinco,
+    .seis {
+        grid-column: 1/13;
+    }
+
+
+
+
 
 
 }
-
