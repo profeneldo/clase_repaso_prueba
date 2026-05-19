@@ -175,12 +175,12 @@ nav ul li:not(.item-tema):hover {
    ========================================= */
 
 .btn-subir {
-    width: 80px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
     background-color: var(--btn_subir_fondo);
     color: var(--btn_subir_letra);
     border: 2px solid var(--btn_subir_letra);
-    border-radius: 5px;
+    border-radius: 50%;
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -191,21 +191,23 @@ nav ul li:not(.item-tema):hover {
     align-items: center;
 }
 
-.btn-subir p {
-    font-size: 18px;
+.btn-subir span {
+    filter: invert(1);
     font-weight: bold;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .btn-subir:hover {
-    width: 90px;
+    
     background-color: var(--btn_subir_letra);
     color: var(--btn_subir_fondo);
     border-color: var(--btn_subir_fondo);
 }
 
-.btn-subir:hover p {
+.btn-subir:hover span {
     text-shadow: none;
+    filter: invert(0);
+    transform: scale(1.5);
 }
 
 /* =========================================
@@ -490,10 +492,13 @@ footer h4 {
 
     /* Transforma el botón de modo oscuro en solo un icono redondo */
     .btn-tema {
+        width: 50px;
         padding: 5px;
-        border-radius: 50%;
+        /* border-radius: 50%; */
         /* border: none; */
         font-size: 18px;
+        display: block;
+        text-align: center;
     }
 
     /* Reajuste de la galería en Tablets */
