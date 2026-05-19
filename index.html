@@ -36,7 +36,7 @@
 
   <!-- enlace a la estilo css -->
 
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/estilo.css">
 
 
 
@@ -71,12 +71,16 @@
   <nav>
     <ul>
       <li><a href="#"> <img src="./assets/icons/home.svg" class="icono"  alt="inicio">  Inicio</a></li>
-      <li><a href="#maqueta"> <img src="./assets/icons/iframe.svg" class="icono" alt="maqu|eta"> Maquetación</a></li>
+      <li><a href="#maqueta"> <img src="./assets/icons/iframe.svg" class="icono" alt="maqueta"> Maquetación</a></li>
       <li><a href="#dise"><img src="./assets/icons/lightbulb.svg" class="icono" alt="diseño"> Diseño</a></li>
       <li><a href="#galeria"> <img src="./assets/icons/gallery.svg" class="icono" alt="galeria"> Galería</a></li>
+       <li><a href="#respo"> <img src="./assets/icons/mobile_layout.svg" class="icono" alt="responsive"> Responsive</a></li>
       <li><a href="#objetivos"> <img src="./assets/icons/home_pin.svg" class="icono" alt="objetivos"> Objetivos</a></li>
       <li><a href="#frame"> <img src="./assets/icons/newspaper.svg" class="icono" alt="framework"> Frameworks</a></li>
       <li><a href="#contacto"> <img src="./assets/icons/inventory.svg"  class="icono"alt="contacto"> Contacto</a></li>
+      <li>
+            <button id="toggle-tema" class="btn-tema">🌙 Modo Oscuro</button>
+        </li>
     </ul>
 
   </nav>
@@ -91,7 +95,7 @@
 
 
 
-      <h2>Introducción al Maquetado </h2>
+      <h2 id="maqueta">Introducción al Maquetado </h2>
 
       <p>La industria tech ha estado creciendo de manera acelerada en los últimos años, sin importar cuántas personas se
         gradúan al año de la universidad, la industria tendrá más necesidad de profesionales que universidades graduando
@@ -110,7 +114,7 @@
         o
         ellos saben todo eso y tú no. ¿Cómo lo hacen? ¿Quién se lo enseño si todos tomamos el mismo curso?</p>
 
-      <p id="dise">Posiblemente has hecho algunas búsquedas en internet sobre qué tecnologías tendrás que aprender para
+      <p >Posiblemente has hecho algunas búsquedas en internet sobre qué tecnologías tendrás que aprender para
         comenzar como desarrollador, tal vez en estas búsquedas encontraste términos como JavaScript, HTML5, CSS3 o
         herramientas más específicas como React, Vue o Angular.</p>
     </section>
@@ -118,7 +122,7 @@
     <!-- segunda seccion -->
 
     <section class="contenedor">
-      <h2>Diseñando un Estilo Web</h2>
+      <h2 id="dise">Diseñando un Estilo Web</h2>
 
       <p>Para la maquetación del sitio se trabajó con HTML5 y CSS3, aplicando las nuevas etiquetas según la
         recomendación
@@ -150,7 +154,7 @@
         de navegación, la primera para un uso habitual y la segunda para los dispositivos móviles. El motivo de esto se
         explicará más detalladamente en el apartado de animación e interacción.</p>
 
-      <p id="galeria">Lo siguiente que se maquetó fue el footer, puesto que requería un esfuerzo menor. Incluyó dos
+      <p >Lo siguiente que se maquetó fue el footer, puesto que requería un esfuerzo menor. Incluyó dos
         divs,
         uno a la derecha y otro a la izquierda. El de la derecha se destinó únicamente a créditos, mientras que el de la
         izquierda contenía los datos de contacto.</p>
@@ -164,7 +168,7 @@
     <section class="contenedor_franja">
 
       <div class="contenedor_galery">
-        <h2>Galería de imágenes</h2>
+        <h2 id="galeria">Galería de imágenes</h2>
 
         <div class="galery">
 
@@ -207,10 +211,10 @@
     </section>
 
     <!-- Cuarta seccion -->
-    <section class="contenedor" id="dise">
+    <section class="contenedor" >
 
 
-      <h2>Diseño Adaptativo</h2>
+      <h2 id="respo">Diseño Adaptativo</h2>
 
       <p>Con el objetivo de definir todos los aspectos del diseño final y facilitar la parte de desarrollo de la web, se
         realizaron una serie de layouts o prototipos de las secciones en los diferentes tamaños de pantalla. Cuando se
@@ -228,7 +232,7 @@
         crearemos
         el setup (tu entorno de trabajo) que utilizarás de aquí en adelante.</p>
 
-      <p id="objetivos">Ya con tu entorno listo, es hora de comenzar con las bases. No me refiero a lo básico, sino a
+      <p >Ya con tu entorno listo, es hora de comenzar con las bases. No me refiero a lo básico, sino a
         los
         fundamentos de la web. Veremos en detalle los tres estándares web que entiende el navegador al momento de estar
         creando productos web: HTML, CSS y JavaScript. Aprender en detalle estas tres tecnologías te dará una gran
@@ -242,7 +246,7 @@
 
     <section class="contenedor">
 
-      <h2>Objetivos y Metodología</h2>
+      <h2 id="objetivos">Objetivos y Metodología</h2>
 
       <p>Los principales objetivos para alcanzar la meta del trabajo fueron: la elaboración
         de un diseño web adaptado a la propuesta del proyecto, el desarrollo
@@ -274,7 +278,7 @@
         galería con PHP y AJAX, que permitiría la solicitud de datos al servidor sin la
         necesidad de recargar la página.</p>
 
-      <p id="frame">A lo largo del proceso de desarrollo se realizó una serie de pruebas que
+      <p>A lo largo del proceso de desarrollo se realizó una serie de pruebas que
         permitieron solucionar errores y advertir limitaciones en el diseño, sobre
         todo en el caso de dispositivos móviles y navegadores desactualizados. La
         evaluación final fue la publicación de la web y su difusión en las redes sociales.
@@ -286,7 +290,7 @@
 
     <!-- Sexta seccion -->
     <section class="contenedor">
-      <h2>Frameworks y librerías</h2>
+      <h2  id="frame">Frameworks y librerías</h2>
 
       <p>Actualmente en la industria existen dos tipos de tecnologías que se utilizan para la construcción de productos
         web, estos son frameworks y librerías y como te comenté en el párrafo de arriba, estas tecnologías están
@@ -381,6 +385,9 @@
 
 
   </footer>
+
+
+  <script src="./js/modo.js"></script>
 
 
 </body>
