@@ -61,6 +61,7 @@ body.dark-mode {
 /* =========================================
    ESTILOS DEL BOTÓN SWITCH EN EL NAV
    ========================================= */
+
 .btn-tema {
     background-color: transparent;
     color: var(--navbar_letra);
@@ -146,12 +147,21 @@ nav ul li a {
     font-weight: 600;
 }
 
-nav ul li:hover {
+/* nav ul li:hover {
     background-color: var(--navbar_hover);
+} */
+
+/* Hover de la navbar excluyendo al botón de tema */
+nav ul li:not(.item-tema):hover {
+    background-color: var(--navbar_hover);
+    /* Usando tu color original */
 }
 
-nav ul li:nth-last-child:hover {
-    background-color: var(--navbar_fondo);
+/* Alineación del ítem que contiene el botón */
+.item-tema {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
 }
 
 .icono {
@@ -460,6 +470,30 @@ footer h4 {
 
     .titulo_secundario {
         font-size: 24px;
+    }
+
+
+    /* Oculta los textos envueltos en el span */
+    .text-nav {
+        display: none;
+    }
+
+    /* Redistribuye el menú para que los iconos queden bien separados */
+    nav ul {
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 15px 10px; /* Reduce un poco el padding en móviles */
+    }
+
+    /* Transforma el botón de modo oscuro en solo un icono redondo */
+    .btn-tema {
+        padding: 5px;
+        border-radius: 50%;
+        /* border: none; */
+        font-size: 18px;
     }
 
     /* Reajuste de la galería en Tablets */
